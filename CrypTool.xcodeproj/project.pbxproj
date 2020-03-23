@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		683C6BAF242973FD007A73DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BAE242973FD007A73DE /* AppDelegate.swift */; };
+		683C6BB1242973FD007A73DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BB0242973FD007A73DE /* SceneDelegate.swift */; };
+		683C6BB3242973FD007A73DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BB2242973FD007A73DE /* ContentView.swift */; };
+		683C6BB524297402007A73DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683C6BB424297402007A73DE /* Assets.xcassets */; };
+		683C6BB824297402007A73DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683C6BB724297402007A73DE /* Preview Assets.xcassets */; };
+		683C6BBB24297402007A73DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683C6BB924297402007A73DE /* LaunchScreen.storyboard */; };
+		683C6BC624297403007A73DE /* CrypToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BC524297403007A73DE /* CrypToolTests.swift */; };
+		683C6BD124297403007A73DE /* CrypToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BD024297403007A73DE /* CrypToolUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		683C6BC224297403007A73DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683C6BA3242973FD007A73DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 683C6BAA242973FD007A73DE;
+			remoteInfo = CrypTool;
+		};
+		683C6BCD24297403007A73DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683C6BA3242973FD007A73DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 683C6BAA242973FD007A73DE;
+			remoteInfo = CrypTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		683C6BAB242973FD007A73DE /* CrypTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		683C6BAE242973FD007A73DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		683C6BB0242973FD007A73DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		683C6BB2242973FD007A73DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		683C6BB424297402007A73DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		683C6BB724297402007A73DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		683C6BBA24297402007A73DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		683C6BBC24297402007A73DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683C6BC124297403007A73DE /* CrypToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		683C6BC524297403007A73DE /* CrypToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypToolTests.swift; sourceTree = "<group>"; };
+		683C6BC724297403007A73DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683C6BCC24297403007A73DE /* CrypToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		683C6BD024297403007A73DE /* CrypToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypToolUITests.swift; sourceTree = "<group>"; };
+		683C6BD224297403007A73DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		683C6BA8242973FD007A73DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683C6BBE24297403007A73DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683C6BC924297403007A73DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		683C6BA2242973FD007A73DE = {
+			isa = PBXGroup;
+			children = (
+				683C6BAD242973FD007A73DE /* CrypTool */,
+				683C6BC424297403007A73DE /* CrypToolTests */,
+				683C6BCF24297403007A73DE /* CrypToolUITests */,
+				683C6BAC242973FD007A73DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		683C6BAC242973FD007A73DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				683C6BAB242973FD007A73DE /* CrypTool.app */,
+				683C6BC124297403007A73DE /* CrypToolTests.xctest */,
+				683C6BCC24297403007A73DE /* CrypToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		683C6BAD242973FD007A73DE /* CrypTool */ = {
+			isa = PBXGroup;
+			children = (
+				683C6BAE242973FD007A73DE /* AppDelegate.swift */,
+				683C6BB0242973FD007A73DE /* SceneDelegate.swift */,
+				683C6BB2242973FD007A73DE /* ContentView.swift */,
+				683C6BB424297402007A73DE /* Assets.xcassets */,
+				683C6BB924297402007A73DE /* LaunchScreen.storyboard */,
+				683C6BBC24297402007A73DE /* Info.plist */,
+				683C6BB624297402007A73DE /* Preview Content */,
+			);
+			path = CrypTool;
+			sourceTree = "<group>";
+		};
+		683C6BB624297402007A73DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				683C6BB724297402007A73DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		683C6BC424297403007A73DE /* CrypToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				683C6BC524297403007A73DE /* CrypToolTests.swift */,
+				683C6BC724297403007A73DE /* Info.plist */,
+			);
+			path = CrypToolTests;
+			sourceTree = "<group>";
+		};
+		683C6BCF24297403007A73DE /* CrypToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				683C6BD024297403007A73DE /* CrypToolUITests.swift */,
+				683C6BD224297403007A73DE /* Info.plist */,
+			);
+			path = CrypToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		683C6BAA242973FD007A73DE /* CrypTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 683C6BD524297403007A73DE /* Build configuration list for PBXNativeTarget "CrypTool" */;
+			buildPhases = (
+				683C6BA7242973FD007A73DE /* Sources */,
+				683C6BA8242973FD007A73DE /* Frameworks */,
+				683C6BA9242973FD007A73DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrypTool;
+			productName = CrypTool;
+			productReference = 683C6BAB242973FD007A73DE /* CrypTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		683C6BC024297403007A73DE /* CrypToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 683C6BD824297403007A73DE /* Build configuration list for PBXNativeTarget "CrypToolTests" */;
+			buildPhases = (
+				683C6BBD24297403007A73DE /* Sources */,
+				683C6BBE24297403007A73DE /* Frameworks */,
+				683C6BBF24297403007A73DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				683C6BC324297403007A73DE /* PBXTargetDependency */,
+			);
+			name = CrypToolTests;
+			productName = CrypToolTests;
+			productReference = 683C6BC124297403007A73DE /* CrypToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		683C6BCB24297403007A73DE /* CrypToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 683C6BDB24297403007A73DE /* Build configuration list for PBXNativeTarget "CrypToolUITests" */;
+			buildPhases = (
+				683C6BC824297403007A73DE /* Sources */,
+				683C6BC924297403007A73DE /* Frameworks */,
+				683C6BCA24297403007A73DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				683C6BCE24297403007A73DE /* PBXTargetDependency */,
+			);
+			name = CrypToolUITests;
+			productName = CrypToolUITests;
+			productReference = 683C6BCC24297403007A73DE /* CrypToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		683C6BA3242973FD007A73DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Arthur Guiot";
+				TargetAttributes = {
+					683C6BAA242973FD007A73DE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					683C6BC024297403007A73DE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 683C6BAA242973FD007A73DE;
+					};
+					683C6BCB24297403007A73DE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 683C6BAA242973FD007A73DE;
+					};
+				};
+			};
+			buildConfigurationList = 683C6BA6242973FD007A73DE /* Build configuration list for PBXProject "CrypTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 683C6BA2242973FD007A73DE;
+			productRefGroup = 683C6BAC242973FD007A73DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				683C6BAA242973FD007A73DE /* CrypTool */,
+				683C6BC024297403007A73DE /* CrypToolTests */,
+				683C6BCB24297403007A73DE /* CrypToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		683C6BA9242973FD007A73DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683C6BBB24297402007A73DE /* LaunchScreen.storyboard in Resources */,
+				683C6BB824297402007A73DE /* Preview Assets.xcassets in Resources */,
+				683C6BB524297402007A73DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683C6BBF24297403007A73DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683C6BCA24297403007A73DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		683C6BA7242973FD007A73DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683C6BAF242973FD007A73DE /* AppDelegate.swift in Sources */,
+				683C6BB1242973FD007A73DE /* SceneDelegate.swift in Sources */,
+				683C6BB3242973FD007A73DE /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683C6BBD24297403007A73DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683C6BC624297403007A73DE /* CrypToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683C6BC824297403007A73DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683C6BD124297403007A73DE /* CrypToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		683C6BC324297403007A73DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 683C6BAA242973FD007A73DE /* CrypTool */;
+			targetProxy = 683C6BC224297403007A73DE /* PBXContainerItemProxy */;
+		};
+		683C6BCE24297403007A73DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 683C6BAA242973FD007A73DE /* CrypTool */;
+			targetProxy = 683C6BCD24297403007A73DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		683C6BB924297402007A73DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				683C6BBA24297402007A73DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		683C6BD324297403007A73DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		683C6BD424297403007A73DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		683C6BD624297403007A73DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CrypTool/Preview Content\"";
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CrypTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		683C6BD724297403007A73DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CrypTool/Preview Content\"";
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CrypTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		683C6BD924297403007A73DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				INFOPLIST_FILE = CrypToolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrypTool.app/CrypTool";
+			};
+			name = Debug;
+		};
+		683C6BDA24297403007A73DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				INFOPLIST_FILE = CrypToolTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrypTool.app/CrypTool";
+			};
+			name = Release;
+		};
+		683C6BDC24297403007A73DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				INFOPLIST_FILE = CrypToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrypTool;
+			};
+			name = Debug;
+		};
+		683C6BDD24297403007A73DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				INFOPLIST_FILE = CrypToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrypTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		683C6BA6242973FD007A73DE /* Build configuration list for PBXProject "CrypTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683C6BD324297403007A73DE /* Debug */,
+				683C6BD424297403007A73DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		683C6BD524297403007A73DE /* Build configuration list for PBXNativeTarget "CrypTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683C6BD624297403007A73DE /* Debug */,
+				683C6BD724297403007A73DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		683C6BD824297403007A73DE /* Build configuration list for PBXNativeTarget "CrypToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683C6BD924297403007A73DE /* Debug */,
+				683C6BDA24297403007A73DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		683C6BDB24297403007A73DE /* Build configuration list for PBXNativeTarget "CrypToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683C6BDC24297403007A73DE /* Debug */,
+				683C6BDD24297403007A73DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 683C6BA3242973FD007A73DE /* Project object */;
+}
