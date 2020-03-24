@@ -19,9 +19,18 @@ struct LevelView: View {
     @State var msgColor = Color.black
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    @State var content: String?
+    @State var loading = true
     var body: some View {
         ZStack(alignment: .top) {
-            SWDownView(text: level.content)
+            LoadingView(isShowing: $loading) {
+                SWDownView(text: self.content ?? "")
+            }.onAppear {
+                DispatchQueue.global().async {
+                    self.content = self.level.content
+                    self.loading = false
+                }
+            }
             BottomSheetView(isOpen: $isOpen, maxHeight: UIScreen.main.bounds.height / 1.5, minHeight: 250) {
                 VStack {
                     HStack(alignment: .center) {

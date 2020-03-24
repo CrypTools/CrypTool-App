@@ -16,6 +16,15 @@ struct ContentView: View {
     @State var cells: [Level]?
     @State var loading = true
     
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .font : UIFont.monospacedSystemFont(ofSize: 36, weight: .bold)]
+                
+        // 3.
+        UINavigationBar.appearance().titleTextAttributes = [
+            .font : UIFont.monospacedSystemFont(ofSize: 20, weight: .bold)]
+    }
+    
     var body: some View {
         TabView(selection: $selection) {
             NavigationView {
@@ -25,8 +34,11 @@ struct ContentView: View {
                             LevelCell(level: l)
                         }
                     }
-                    .navigationBarTitle(Text("CrypTool")
-                    .foregroundColor(Color.black))
+                    .navigationBarItems(leading: Image("Logo").resizable().frame(width: 64, height: 64))
+                    .navigationBarTitle(
+                        Text("Learn")
+                            .foregroundColor(Color.black)
+                    )
                     .onAppear {
                         self.getLevels()
                     }
@@ -36,10 +48,10 @@ struct ContentView: View {
                     VStack {
                         Image("learnTab")
                         Text("Learn")
+                        .font(.system(size: 18, weight: .bold, design: .monospaced))
                     }
             }.tag(0)
-        }
-        
+        }.edgesIgnoringSafeArea(.top).accentColor(Color(#colorLiteral(red: 0.2980392157, green: 0.6862745098, blue: 0.3137254902, alpha: 1)))
     }
     
     func getLevels() {
