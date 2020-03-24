@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6814227A242A681B005C1F5C /* caesar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814226F242A681B005C1F5C /* caesar.swift */; };
+		6814227B242A681B005C1F5C /* sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142270242A681B005C1F5C /* sha256.swift */; };
+		6814227C242A681B005C1F5C /* BitShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142271242A681B005C1F5C /* BitShift.swift */; };
+		6814227D242A681B005C1F5C /* md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142272242A681B005C1F5C /* md5.swift */; };
+		6814227E242A681B005C1F5C /* b64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142273242A681B005C1F5C /* b64.swift */; };
+		6814227F242A681B005C1F5C /* HashShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142274242A681B005C1F5C /* HashShift.swift */; };
+		68142280242A681B005C1F5C /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142275242A681B005C1F5C /* Emoji.swift */; };
+		68142281242A681B005C1F5C /* binascii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142276242A681B005C1F5C /* binascii.swift */; };
+		68142282242A681B005C1F5C /* XOR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142277242A681B005C1F5C /* XOR.swift */; };
+		68142283242A681B005C1F5C /* ROT13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142278242A681B005C1F5C /* ROT13.swift */; };
+		68142284242A681B005C1F5C /* Rail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142279242A681B005C1F5C /* Rail.swift */; };
+		68142287242A6833005C1F5C /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 68142286242A6832005C1F5C /* success.m4a */; };
+		68142289242A74BD005C1F5C /* Ciphers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142288242A74BD005C1F5C /* Ciphers.swift */; };
 		683C6BAF242973FD007A73DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BAE242973FD007A73DE /* AppDelegate.swift */; };
 		683C6BB1242973FD007A73DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BB0242973FD007A73DE /* SceneDelegate.swift */; };
 		683C6BB3242973FD007A73DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BB2242973FD007A73DE /* ContentView.swift */; };
@@ -42,6 +55,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6814226F242A681B005C1F5C /* caesar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caesar.swift; sourceTree = "<group>"; };
+		68142270242A681B005C1F5C /* sha256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sha256.swift; sourceTree = "<group>"; };
+		68142271242A681B005C1F5C /* BitShift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitShift.swift; sourceTree = "<group>"; };
+		68142272242A681B005C1F5C /* md5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = md5.swift; sourceTree = "<group>"; };
+		68142273242A681B005C1F5C /* b64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = b64.swift; sourceTree = "<group>"; };
+		68142274242A681B005C1F5C /* HashShift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashShift.swift; sourceTree = "<group>"; };
+		68142275242A681B005C1F5C /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		68142276242A681B005C1F5C /* binascii.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = binascii.swift; sourceTree = "<group>"; };
+		68142277242A681B005C1F5C /* XOR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XOR.swift; sourceTree = "<group>"; };
+		68142278242A681B005C1F5C /* ROT13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROT13.swift; sourceTree = "<group>"; };
+		68142279242A681B005C1F5C /* Rail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rail.swift; sourceTree = "<group>"; };
+		68142286242A6832005C1F5C /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		68142288242A74BD005C1F5C /* Ciphers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ciphers.swift; sourceTree = "<group>"; };
 		683C6BAB242973FD007A73DE /* CrypTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrypTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		683C6BAE242973FD007A73DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		683C6BB0242973FD007A73DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +116,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6814226E242A681B005C1F5C /* Ciphers */ = {
+			isa = PBXGroup;
+			children = (
+				6814226F242A681B005C1F5C /* caesar.swift */,
+				68142270242A681B005C1F5C /* sha256.swift */,
+				68142271242A681B005C1F5C /* BitShift.swift */,
+				68142272242A681B005C1F5C /* md5.swift */,
+				68142273242A681B005C1F5C /* b64.swift */,
+				68142274242A681B005C1F5C /* HashShift.swift */,
+				68142275242A681B005C1F5C /* Emoji.swift */,
+				68142276242A681B005C1F5C /* binascii.swift */,
+				68142277242A681B005C1F5C /* XOR.swift */,
+				68142278242A681B005C1F5C /* ROT13.swift */,
+				68142279242A681B005C1F5C /* Rail.swift */,
+			);
+			path = Ciphers;
+			sourceTree = "<group>";
+		};
+		68142285242A6832005C1F5C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				68142286242A6832005C1F5C /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		683C6BA2242973FD007A73DE = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +165,8 @@
 		683C6BAD242973FD007A73DE /* CrypTool */ = {
 			isa = PBXGroup;
 			children = (
+				68142285242A6832005C1F5C /* Sounds */,
+				6814226E242A681B005C1F5C /* Ciphers */,
 				6885B0AC242A3F400075C219 /* Special Views */,
 				6885B0A9242A3EB60075C219 /* Controllers */,
 				683C6BE42429815C007A73DE /* Objects */,
@@ -164,6 +218,7 @@
 		683C6BE42429815C007A73DE /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				68142288242A74BD005C1F5C /* Ciphers.swift */,
 				683C6BE524298170007A73DE /* Level.swift */,
 			);
 			path = Objects;
@@ -299,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68142287242A6833005C1F5C /* success.m4a in Resources */,
 				683C6BBB24297402007A73DE /* LaunchScreen.storyboard in Resources */,
 				683C6BB824297402007A73DE /* Preview Assets.xcassets in Resources */,
 				683C6BB524297402007A73DE /* Assets.xcassets in Resources */,
@@ -326,13 +382,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68142284242A681B005C1F5C /* Rail.swift in Sources */,
+				68142282242A681B005C1F5C /* XOR.swift in Sources */,
+				68142280242A681B005C1F5C /* Emoji.swift in Sources */,
 				683C6BAF242973FD007A73DE /* AppDelegate.swift in Sources */,
+				6814227A242A681B005C1F5C /* caesar.swift in Sources */,
 				6885B0AB242A3ED60075C219 /* LevelView.swift in Sources */,
+				68142283242A681B005C1F5C /* ROT13.swift in Sources */,
 				6885B0AE242A3F550075C219 /* BottomSheet.swift in Sources */,
 				683C6BB1242973FD007A73DE /* SceneDelegate.swift in Sources */,
 				683C6BE324297609007A73DE /* LevelCell.swift in Sources */,
+				6814227D242A681B005C1F5C /* md5.swift in Sources */,
+				6814227E242A681B005C1F5C /* b64.swift in Sources */,
 				6885B0B3242A41F50075C219 /* Down.swift in Sources */,
 				683C6BE624298170007A73DE /* Level.swift in Sources */,
+				68142289242A74BD005C1F5C /* Ciphers.swift in Sources */,
+				68142281242A681B005C1F5C /* binascii.swift in Sources */,
+				6814227B242A681B005C1F5C /* sha256.swift in Sources */,
+				6814227C242A681B005C1F5C /* BitShift.swift in Sources */,
+				6814227F242A681B005C1F5C /* HashShift.swift in Sources */,
 				683C6BB3242973FD007A73DE /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

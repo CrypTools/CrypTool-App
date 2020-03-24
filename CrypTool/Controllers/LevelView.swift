@@ -16,9 +16,12 @@ struct LevelView: View {
         ZStack {
             SWDownView(text: level.content)
             BottomSheetView(isOpen: $isOpen, maxHeight: 300.0) {
-                HStack {
+                HStack(alignment: .center) {
                     Text("Answer")
-                    TextField("Answer", text: $answer)
+                        .font(.system(size: 18, weight: .bold, design: .monospaced))
+                    TextField("Result", text: $answer)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(width: 150)
                 }
             }
         }

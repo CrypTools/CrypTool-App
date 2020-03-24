@@ -15,17 +15,18 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selection) {
             NavigationView {
-                QGrid(cells ?? [], columns: 1) { l in
+                QGrid(cells ?? [], columns: 1, vPadding: 0) { l in
                     NavigationLink(destination: LevelView(level: l)) {
                         LevelCell(level: l, index: 0)
                     }
-                }.navigationBarTitle(Text("CrypTool")
+                }
+                .navigationBarTitle(Text("CrypTool")
                 .foregroundColor(Color.black))
             }
             .tabItem {
                     VStack {
-                        Image("first")
-                        Text("First")
+                        Image("learnTab")
+                        Text("Learn")
                     }
             }.tag(0)
         }
