@@ -29,12 +29,15 @@ struct ContentView: View {
         TabView(selection: $selection) {
             NavigationView {
                 LoadingView(isShowing: $loading) {
-                    QGrid(self.cells ?? [], columns: 1, vPadding: 0) { l in
+                    QGrid(self.cells ?? [], columns: Int(UIScreen.main.bounds.width / (300 + 100)), vPadding: 0) { l in
                         NavigationLink(destination: LevelView(level: l)) {
                             LevelCell(level: l)
                         }
                     }
-                    .navigationBarItems(leading: Image("Logo").resizable().frame(width: 64, height: 64))
+                    .navigationBarItems(leading: Image("Logo")
+                        .resizable()
+                        .frame(width: 64, height: 64)
+                    )
                     .navigationBarTitle(
                         Text("Learn")
                             .foregroundColor(Color.black)

@@ -21,7 +21,7 @@ struct SWDownView: UIViewRepresentable {
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
         let d = Down(markdownString: text)
-        let html = (try? d.toHTML()) ?? ""
+        let html = (try? d.toHTML(DownOptions.smartUnsafe)) ?? ""
         uiView.loadHTMLString(md(html), baseURL: nil)
     }
     
