@@ -7,36 +7,27 @@
 //
 
 import SwiftUI
+import QGrid
 
 struct ContentView: View {
     @State private var selection = 0
- 
+    @State var cells: [Level]?
     var body: some View {
-        TabView(selection: $selection){
-            Text("First View")
-                .font(.title)
-                .tabItem {
+        TabView(selection: $selection) {
+            QGrid(cells ?? [], columns: 1) { LevelCell(level: $0, index: 0) }
+            .tabItem {
                     VStack {
                         Image("first")
                         Text("First")
                     }
-                }
+            }
                 .tag(0)
-            Text("Second View")
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image("second")
-                        Text("Second")
-                    }
-                }
-                .tag(1)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(cells: [Level(id: "caesar", name: "CaesarCipher", questionURL: "", answer: "")])
     }
 }

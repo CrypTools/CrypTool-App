@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		683C6BBB24297402007A73DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683C6BB924297402007A73DE /* LaunchScreen.storyboard */; };
 		683C6BC624297403007A73DE /* CrypToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BC524297403007A73DE /* CrypToolTests.swift */; };
 		683C6BD124297403007A73DE /* CrypToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BD024297403007A73DE /* CrypToolUITests.swift */; };
+		683C6BE0242975A2007A73DE /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 683C6BDF242975A2007A73DE /* QGrid */; };
+		683C6BE324297609007A73DE /* LevelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BE224297609007A73DE /* LevelCell.swift */; };
+		683C6BE624298170007A73DE /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C6BE524298170007A73DE /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		683C6BCC24297403007A73DE /* CrypToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrypToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		683C6BD024297403007A73DE /* CrypToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypToolUITests.swift; sourceTree = "<group>"; };
 		683C6BD224297403007A73DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683C6BE224297609007A73DE /* LevelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCell.swift; sourceTree = "<group>"; };
+		683C6BE524298170007A73DE /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				683C6BE0242975A2007A73DE /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,8 @@
 		683C6BAD242973FD007A73DE /* CrypTool */ = {
 			isa = PBXGroup;
 			children = (
+				683C6BE42429815C007A73DE /* Objects */,
+				683C6BE1242975AB007A73DE /* Elements */,
 				683C6BAE242973FD007A73DE /* AppDelegate.swift */,
 				683C6BB0242973FD007A73DE /* SceneDelegate.swift */,
 				683C6BB2242973FD007A73DE /* ContentView.swift */,
@@ -136,6 +144,22 @@
 			path = CrypToolUITests;
 			sourceTree = "<group>";
 		};
+		683C6BE1242975AB007A73DE /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				683C6BE224297609007A73DE /* LevelCell.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		683C6BE42429815C007A73DE /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				683C6BE524298170007A73DE /* Level.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +176,9 @@
 			dependencies = (
 			);
 			name = CrypTool;
+			packageProductDependencies = (
+				683C6BDF242975A2007A73DE /* QGrid */,
+			);
 			productName = CrypTool;
 			productReference = 683C6BAB242973FD007A73DE /* CrypTool.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +251,9 @@
 				Base,
 			);
 			mainGroup = 683C6BA2242973FD007A73DE;
+			packageReferences = (
+				683C6BDE242975A2007A73DE /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = 683C6BAC242973FD007A73DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,6 +299,8 @@
 			files = (
 				683C6BAF242973FD007A73DE /* AppDelegate.swift in Sources */,
 				683C6BB1242973FD007A73DE /* SceneDelegate.swift in Sources */,
+				683C6BE324297609007A73DE /* LevelCell.swift in Sources */,
+				683C6BE624298170007A73DE /* Level.swift in Sources */,
 				683C6BB3242973FD007A73DE /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		683C6BDE242975A2007A73DE /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		683C6BDF242975A2007A73DE /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 683C6BDE242975A2007A73DE /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 683C6BA3242973FD007A73DE /* Project object */;
 }
