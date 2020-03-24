@@ -12,6 +12,13 @@ struct LevelCell: View {
     var level: Level
     @State var finished = false
     
+    let appGroupID = "group.com.ArthurG.CrypTools"
+    var defaults: UserDefaults? {
+        return UserDefaults(suiteName: appGroupID)
+    }
+    var done: [String]? {
+        return defaults?.array(forKey: "done") as? [String]
+    }
     var body: some View {
         ZStack(alignment: .top) {
             VStack {
@@ -32,7 +39,7 @@ struct LevelCell: View {
             HStack {
                 Spacer()
                 
-                if finished {
+                if done?.contains(where: { $0 == level.id }) ?? false {
                     Circle()
                     .frame(width: 25, height: 25)
                     .foregroundColor(Color(#colorLiteral(red: 0.2980392157, green: 0.6862745098, blue: 0.3137254902, alpha: 1)))

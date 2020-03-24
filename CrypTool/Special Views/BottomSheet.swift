@@ -40,8 +40,8 @@ struct BottomSheetView<Content: View>: View {
         }
     }
 
-    init(isOpen: Binding<Bool>, maxHeight: CGFloat, @ViewBuilder content: () -> Content) {
-        self.minHeight = maxHeight * Constants.minHeightRatio
+    init(isOpen: Binding<Bool>, maxHeight: CGFloat, minHeight: CGFloat, @ViewBuilder content: () -> Content) {
+        self.minHeight = minHeight
         self.maxHeight = maxHeight
         self.content = content()
         self._isOpen = isOpen
@@ -76,7 +76,7 @@ struct BottomSheetView<Content: View>: View {
 
 struct BottomSheetView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomSheetView(isOpen: .constant(false), maxHeight: 600) {
+        BottomSheetView(isOpen: .constant(false), maxHeight: 600, minHeight: 300) {
             Rectangle().fill(Color.red)
         }.edgesIgnoringSafeArea(.all)
     }
