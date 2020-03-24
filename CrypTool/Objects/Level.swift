@@ -13,7 +13,10 @@ class Level: Identifiable {
     var name: String;
     var questionURL: String;
     var answer: String;
-    
+    var content: String {
+        guard let url = URL(string: self.questionURL) else { return "" }
+        return (try? String(contentsOf: url)) ?? ""
+    }
     init(id: String, name: String, questionURL: String, answer: String) {
         self.id = id
         self.name = name

@@ -14,20 +14,27 @@ struct ContentView: View {
     @State var cells: [Level]?
     var body: some View {
         TabView(selection: $selection) {
-            QGrid(cells ?? [], columns: 1) { LevelCell(level: $0, index: 0) }
+            NavigationView {
+                QGrid(cells ?? [], columns: 1) { l in
+                    NavigationLink(destination: LevelView(level: l)) {
+                        LevelCell(level: l, index: 0)
+                    }
+                }.navigationBarTitle(Text("CrypTool")
+                .foregroundColor(Color.black))
+            }
             .tabItem {
                     VStack {
                         Image("first")
                         Text("First")
                     }
-            }
-                .tag(0)
+            }.tag(0)
         }
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(cells: [Level(id: "caesar", name: "CaesarCipher", questionURL: "", answer: "")])
+        ContentView(cells: [Level(id: "caesar", name: "CaesarCipher", questionURL: "emojigraphy.md", answer: "")])
     }
 }
