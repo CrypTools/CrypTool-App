@@ -10,13 +10,12 @@ import SwiftUI
 
 struct LevelCell: View {
     var level: Level
-    var index: Int
     @State var finished = false
     
     var body: some View {
         ZStack(alignment: .top) {
             VStack {
-                Text("#\(self.index + 1)")
+                Text("#\(self.level.index + 1)")
                     .font(.system(size: 32, weight: .bold, design: .monospaced))
                     .foregroundColor(Color.black)
                     .frame(width: 300, height: 105)
@@ -45,6 +44,6 @@ struct LevelCell: View {
 
 struct LevelCell_Previews: PreviewProvider {
     static var previews: some View {
-        LevelCell(level: Level(id: "caesar", name: "Caesar Cipher", questionURL: "", answer: ""), index: 0)
+        LevelCell(level: Level(id: "caesar", name: "Caesar Cipher", questionURL: "", answer: ""))
     }
 }

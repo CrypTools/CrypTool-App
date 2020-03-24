@@ -15,20 +15,20 @@ class Cipher {
 	var type = [Bool]() // true is encrypt, false is decrypt
     func add(_ name: String, _ callback: f?, _ type: Bool = true) {
 		self.name.append(name)
-        self.call.append(callback)
+        self.call.append(callback as Any)
 		self.type.append(type)
 	}
 	func get(_ name: String?) -> f {
-		let i = self.name.index(of: name ?? self.name[0])
+        let i = self.name.firstIndex(of: name ?? self.name[0])
 		return call[i ?? 0] as! f
 	}
 	func getDecrypt(_ name: String) -> f {
 		let match = matches(for: "Encrypt", in: name)
 		if match.count > 0 {
-			let i = self.name.index(of: name) ?? 0
+            let i = self.name.firstIndex(of: name) ?? 0
 			return call[i + 1] as! f
 		} else {
-			let i = self.name.index(of: name)
+            let i = self.name.firstIndex(of: name)
 			return call[i ?? 0] as! f
 		}
 		

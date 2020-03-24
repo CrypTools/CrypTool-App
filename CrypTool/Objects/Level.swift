@@ -17,10 +17,13 @@ class Level: Identifiable {
         guard let url = URL(string: self.questionURL) else { return "" }
         return (try? String(contentsOf: url)) ?? ""
     }
-    init(id: String, name: String, questionURL: String, answer: String) {
+    
+    var index: Int
+    init(id: String, name: String, questionURL: String, answer: String, index: Int = 0) {
         self.id = id
         self.name = name
         self.questionURL = "https://cryptools.github.io/learn/noob_questions/\(questionURL)"
         self.answer = answer
+        self.index = index
     }
 }
