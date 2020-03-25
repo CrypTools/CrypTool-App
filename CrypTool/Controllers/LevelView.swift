@@ -44,6 +44,7 @@ struct LevelView: View {
                                 self.isOpen = true
                             }
                         Button(action: {
+                            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                             self.valueChanged()
                         }) {
                             Image("forward")

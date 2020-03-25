@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6805279A242BB45B0021F146 /* EncryptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68052799242BB45B0021F146 /* EncryptView.swift */; };
+		6805279C242BB5BE0021F146 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805279B242BB5BE0021F146 /* TextView.swift */; };
 		6814227A242A681B005C1F5C /* caesar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814226F242A681B005C1F5C /* caesar.swift */; };
 		6814227B242A681B005C1F5C /* sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142270242A681B005C1F5C /* sha256.swift */; };
 		6814227C242A681B005C1F5C /* BitShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142271242A681B005C1F5C /* BitShift.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68052799242BB45B0021F146 /* EncryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptView.swift; sourceTree = "<group>"; };
+		6805279B242BB5BE0021F146 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		6814226F242A681B005C1F5C /* caesar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caesar.swift; sourceTree = "<group>"; };
 		68142270242A681B005C1F5C /* sha256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sha256.swift; sourceTree = "<group>"; };
 		68142271242A681B005C1F5C /* BitShift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitShift.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 			children = (
 				683C6BB2242973FD007A73DE /* ContentView.swift */,
 				6885B0AA242A3ED60075C219 /* LevelView.swift */,
+				68052799242BB45B0021F146 /* EncryptView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				6885B0AD242A3F540075C219 /* BottomSheet.swift */,
 				6885B0B2242A41F50075C219 /* Down.swift */,
 				68142290242A798A005C1F5C /* LoadingActivity.swift */,
+				6805279B242BB5BE0021F146 /* TextView.swift */,
 			);
 			path = "Special Views";
 			sourceTree = "<group>";
@@ -409,9 +415,11 @@
 				6885B0B3242A41F50075C219 /* Down.swift in Sources */,
 				683C6BE624298170007A73DE /* Level.swift in Sources */,
 				68142289242A74BD005C1F5C /* Ciphers.swift in Sources */,
+				6805279A242BB45B0021F146 /* EncryptView.swift in Sources */,
 				68142281242A681B005C1F5C /* binascii.swift in Sources */,
 				6814227B242A681B005C1F5C /* sha256.swift in Sources */,
 				6814227C242A681B005C1F5C /* BitShift.swift in Sources */,
+				6805279C242BB5BE0021F146 /* TextView.swift in Sources */,
 				6814227F242A681B005C1F5C /* HashShift.swift in Sources */,
 				683C6BB3242973FD007A73DE /* ContentView.swift in Sources */,
 			);

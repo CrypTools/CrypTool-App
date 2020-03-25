@@ -54,6 +54,13 @@ struct ContentView: View {
                         .font(.system(size: 18, weight: .bold, design: .monospaced))
                     }
             }.tag(0)
+            EncryptView().tabItem {
+                VStack {
+                    Image("learnTab")
+                    Text("Encrypt")
+                    .font(.system(size: 18, weight: .bold, design: .monospaced))
+                }
+            }.tag(1)
         }.edgesIgnoringSafeArea(.top).accentColor(Color(#colorLiteral(red: 0.2980392157, green: 0.6862745098, blue: 0.3137254902, alpha: 1)))
     }
     

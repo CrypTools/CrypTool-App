@@ -48,7 +48,7 @@ class Cipher {
 		})
 		self.add("Base64 - Decrypt", {
 			text, key in
-			return text.b64decrypt!
+			return text.b64decrypt ?? "Character error, try something different"
 		}, false)
 		self.add("BinASCII - Encrypt", {
 			text, key in
