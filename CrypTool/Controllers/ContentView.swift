@@ -25,6 +25,19 @@ struct ContentView: View {
             .font : UIFont.monospacedSystemFont(ofSize: 20, weight: .bold)]
     }
     
+    var hasTopNotch: Bool {
+        #if targetEnvironment(macCatalyst)
+            return false
+        #endif
+        if #available(iOS 13.0,  *) {
+            return UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.safeAreaInsets.top ?? 0 > 20
+        }else{
+         return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20
+        }
+
+        return false
+    }
+    
     var body: some View {
         TabView(selection: $selection) {
             NavigationView {
@@ -34,7 +47,7 @@ struct ContentView: View {
                             LevelCell(level: l)
                         }
                     }
-                    .navigationBarItems(leading: Image("Logo")
+                    .navigationBarItems(leading: Image("LogoHD")
                         .resizable()
                         .frame(width: 64, height: 64)
                     )
@@ -47,6 +60,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .tabItem {
                     VStack {
                         Image("learnTab")
@@ -63,7 +77,7 @@ struct ContentView: View {
                     .font(.system(size: 18, weight: .bold, design: .monospaced))
                 }
             }.tag(1)
-        }.edgesIgnoringSafeArea(.top).accentColor(Color(#colorLiteral(red: 0.2980392157, green: 0.6862745098, blue: 0.3137254902, alpha: 1)))
+        }.edgesIgnoringSafeArea(hasTopNotch ? [.top] : []).accentColor(Color(#colorLiteral(red: 0.2980392157, green: 0.6862745098, blue: 0.3137254902, alpha: 1)))
     }
     
     func getLevels() {

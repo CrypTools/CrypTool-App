@@ -60,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68048FF3243122E200278A2C /* CrypTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrypTool.entitlements; sourceTree = "<group>"; };
 		68052799242BB45B0021F146 /* EncryptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptView.swift; sourceTree = "<group>"; };
 		6805279B242BB5BE0021F146 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		6814226F242A681B005C1F5C /* caesar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = caesar.swift; sourceTree = "<group>"; };
@@ -175,6 +176,7 @@
 		683C6BAD242973FD007A73DE /* CrypTool */ = {
 			isa = PBXGroup;
 			children = (
+				68048FF3243122E200278A2C /* CrypTool.entitlements */,
 				68142285242A6832005C1F5C /* Sounds */,
 				6814226E242A681B005C1F5C /* Ciphers */,
 				6885B0AC242A3F400075C219 /* Special Views */,
@@ -586,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CrypTool/CrypTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CrypTool/Preview Content\"";
 				DEVELOPMENT_TEAM = 73CCF549YB;
@@ -597,6 +600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -606,6 +610,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CrypTool/CrypTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CrypTool/Preview Content\"";
 				DEVELOPMENT_TEAM = 73CCF549YB;
@@ -617,6 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

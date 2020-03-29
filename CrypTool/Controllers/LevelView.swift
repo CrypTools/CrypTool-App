@@ -76,7 +76,7 @@ struct LevelView: View {
                 }
             }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
             .background(Color.white)
-            .offset(x: 0, y: showCongrats ? 0 : UIScreen.main.bounds.height)
+            .offset(x: 0, y: showCongrats ? 0 : 2*UIScreen.main.bounds.height)
                 .animation(.easeInOut)
         }
     }
