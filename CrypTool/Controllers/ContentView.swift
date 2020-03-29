@@ -56,7 +56,9 @@ struct ContentView: View {
             }.tag(0)
             EncryptView().tabItem {
                 VStack {
-                    Image("learnTab")
+                    Image(systemName: "lock.rotation")
+                        .font(.system(size: 18.0, weight: .bold))
+                        .imageScale(.large)
                     Text("Encrypt")
                     .font(.system(size: 18, weight: .bold, design: .monospaced))
                 }
