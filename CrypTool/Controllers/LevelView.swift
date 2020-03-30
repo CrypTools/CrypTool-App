@@ -16,7 +16,7 @@ struct LevelView: View {
     @State var showCongrats = false
     
     @State var message = "Confirm your answer!"
-    @State var msgColor = Color.black
+    @State var msgColor = Color.clear
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     @State var content: String?

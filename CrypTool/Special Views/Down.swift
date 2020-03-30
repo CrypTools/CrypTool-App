@@ -64,9 +64,9 @@ struct SWDownView: UIViewRepresentable {
                     }
                     .markdown-body {
                         color: var(--text-color) !important;
-                        table {
-                            color: black !important;
-                        }
+                    }
+                    .markdown-body table {
+                        color: black !important;
                     }
                 }
             </style>
