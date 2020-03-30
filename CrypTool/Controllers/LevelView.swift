@@ -79,6 +79,10 @@ struct LevelView: View {
             .offset(x: 0, y: showCongrats ? 0 : 2*UIScreen.main.bounds.height)
                 .animation(.easeInOut)
         }
+        .navigationBarTitle(
+            Text(level.name)
+                .foregroundColor(Color.black)
+        )
     }
     
     func valueChanged() {

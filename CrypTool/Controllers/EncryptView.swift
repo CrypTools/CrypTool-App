@@ -22,6 +22,9 @@ struct EncryptView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     HStack {
+                        Image("LogoHD")
+                        .resizable()
+                        .frame(width: 64, height: 64)
                         Text("Ciphers")
                         .font(.system(size: 36, weight: .bold, design: .monospaced))
                         .multilineTextAlignment(.leading)
