@@ -7,14 +7,9 @@
 //
 
 import SwiftUI
-import QGrid
-import Alamofire
-import SwiftyJSON
 
 struct ContentView: View {
     @State private var selection = 0
-    @State var cells: [Level]?
-    @State var loading = true
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [
@@ -38,27 +33,30 @@ struct ContentView: View {
         return false
     }
     
+    var isMac: Bool {
+        #if targetEnvironment(macCatalyst)
+            return true
+        #endif
+        return false
+    }
+    
     var body: some View {
         TabView(selection: $selection) {
-            NavigationView {
-                LoadingView(isShowing: $loading) {
-                    QGrid(self.cells ?? [], columns: Int(UIScreen.main.bounds.width / (300 + 100)), vPadding: 0) { l in
-                        NavigationLink(destination: LevelView(level: l)) {
-                            LevelCell(level: l)
-                        }
-                    }
-                    .navigationBarItems(leading: Image("LogoHD")
-                        .resizable()
-                        .frame(width: 64, height: 64)
-                    )
-                    .navigationBarTitle(
-                        Text("Learn")
-                            .foregroundColor(Color.black)
-                    )
-                    .onAppear {
-                        self.getLevels()
-                    }
+            #if targetEnvironment(macCatalyst)
+                NavigationView {
+                    LearnView()
                 }
+                .navigationViewStyle(DefaultNavigationViewStyle())
+                .tabItem {
+                        VStack {
+                            Image("learnTab")
+                            Text("Learn")
+                            .font(.system(size: 18, weight: .bold, design: .monospaced))
+                        }
+                }.tag(0)
+            #else
+            NavigationView {
+                LearnView()
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .tabItem {
@@ -68,6 +66,7 @@ struct ContentView: View {
                         .font(.system(size: 18, weight: .bold, design: .monospaced))
                     }
             }.tag(0)
+            #endif
             EncryptView().tabItem {
                 VStack {
                     Image(systemName: "lock.rotation")
@@ -78,50 +77,6 @@ struct ContentView: View {
                 }
             }.tag(1)
         }.edgesIgnoringSafeArea(hasTopNotch ? [.top] : []).accentColor(Color(#colorLiteral(red: 0.2980392157, green: 0.6862745098, blue: 0.3137254902, alpha: 1)))
-    }
-    
-    func getLevels() {
-        let location = "https://cryptools.github.io/learn/api/challenges.json"
-        
-        AF.request(location).responseJSON {
-            response in
-            if (response.error != nil) {
-                print(response.error?.localizedDescription)
-                return
-            }
-            do {
-                let json = try JSON(data: response.data!)
-                let noob = json["challenges"]["noob"]
-                
-                self.cells = []
-                var indx = 0
-                for i in noob.arrayValue {
-                    let level = Level(id: i["name"].string!, name: i["fancy"].string!, questionURL: i["question"].string!, answer: i["answer"].stringValue, index: indx)
-                    self.cells?.append(level)
-                    indx += 1
-                }
-                
-                self.loading = false
-                
-                let appGroupID = "group.com.ArthurG.CrypTools"
-                let defaults = UserDefaults(suiteName: appGroupID)
-                defaults?.setValue(self.cells?.count ?? 1, forKey: "levels")
-                
-                self.defaults()
-            } catch {
-                print("JSON Parsing Error")
-            }
-        }
-    }
-    func defaults() {
-        let appGroupID = "group.com.ArthurG.CrypTools"
-        let defaults = UserDefaults(suiteName: appGroupID)
-        if (defaults?.array(forKey: "done") == nil) {
-            defaults?.set([], forKey: "done")
-            defaults?.set(1, forKey: "levels")
-        }
-        defaults?.synchronize()
-        
     }
 }
 
