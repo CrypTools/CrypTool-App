@@ -19,6 +19,11 @@ class Level: Identifiable {
     }
     
     var index: Int
+    
+    static var empty: Level {
+        return Level(id: "0", name: "0", questionURL: "0", answer: "0")
+    }
+    
     init(id: String, name: String, questionURL: String, answer: String, index: Int = 0) {
         self.id = id
         self.name = name

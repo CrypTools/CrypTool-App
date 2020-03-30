@@ -12,7 +12,7 @@ import Alamofire
 import SwiftyJSON
 
 struct LearnView: View {
-    @State var cells: [Level] = []
+    @State var cells: [Level] = [Level.empty]
     @State var loading = true
     
     let appGroupID = "group.com.ArthurG.CrypTools"
@@ -38,7 +38,6 @@ struct LearnView: View {
                                 .foregroundColor(Color(#colorLiteral(red: 0.2980392157, green: 0.6862745098, blue: 0.3137254902, alpha: 1)))
                             }
                         }
-                        
                     }
                 }
                 .navigationBarItems(leading: Image("LogoHD")

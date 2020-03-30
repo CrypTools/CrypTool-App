@@ -29,12 +29,14 @@ struct EncryptView: View {
                         .font(.system(size: 36, weight: .bold, design: .monospaced))
                         .multilineTextAlignment(.leading)
                         Spacer()
+                        #if !targetEnvironment(macCatalyst)
                         Button(action: {
                             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                             self.isOpen = true
                         }) {
                             Text("Show Result")
                         }
+                        #endif
                     }
                     MultilineTextField("Enter your text here", text: $message)
                     HStack {
@@ -55,20 +57,26 @@ struct EncryptView: View {
                 .padding(.bottom, UIScreen.main.bounds.height / 1.5)
             }
             BottomSheetView(isOpen: $isOpen, maxHeight: UIScreen.main.bounds.height / 1.5, minHeight: 250) {
-                VStack {
-                    Text("Result")
-                        .font(.system(size: 18, weight: .bold, design: .monospaced))
-                    Text(ciphers.get(ciphers.name[selection])(message, key))
-                    .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.black))
-                    
-                    Button(action: {
-                        UIPasteboard.general.string = self.ciphers.get(self.ciphers.name[self.selection])(self.message, self.key)
-                    }) {
-                        Text("Copy")
+                GeometryReader { geometry in
+                    ScrollView {
+                        VStack {
+                            Text("Result")
+                                .font(.system(size: 18, weight: .bold, design: .monospaced))
+                                .padding()
+                            Text(self.ciphers.get(self.ciphers.name[self.selection])(self.message, self.key))
+                            .padding()
+                                .frame(width: geometry.size.width - 40)
+                            .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.black))
+                            
+                            Button(action: {
+                                UIPasteboard.general.string = self.ciphers.get(self.ciphers.name[self.selection])(self.message, self.key)
+                            }) {
+                                Text("Copy")
+                            }
+                            .padding()
+                        }
                     }
                 }
-                
             }
         }
     }
