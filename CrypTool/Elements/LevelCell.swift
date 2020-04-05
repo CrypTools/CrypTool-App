@@ -31,7 +31,7 @@ struct LevelCell: View {
                     .font(.system(size: 18, weight: .bold, design: .monospaced))
                     .foregroundColor(Color.white)
                     .frame(width: 300, height: 75)
-                    .background(Color.black)
+                    .background(Color(#colorLiteral(red: 0.07058823529, green: 0.4666666667, blue: 0.9215686275, alpha: 1)))
             }
             .cornerRadius(15)
             .shadow(color: .gray, radius: 5, x: 0, y: 0)

@@ -18,7 +18,7 @@ struct ContentView: View {
         // 3.
         UINavigationBar.appearance().titleTextAttributes = [
             .font : UIFont.monospacedSystemFont(ofSize: 20, weight: .bold)]
-    }
+          }
     
     var hasTopNotch: Bool {
         #if targetEnvironment(macCatalyst)
@@ -76,7 +76,7 @@ struct ContentView: View {
                     .font(.system(size: 18, weight: .bold, design: .monospaced))
                 }
             }.tag(1)
-        }.edgesIgnoringSafeArea(hasTopNotch ? [.top] : []).accentColor(Color(#colorLiteral(red: 0.2980392157, green: 0.6862745098, blue: 0.3137254902, alpha: 1)))
+        }.edgesIgnoringSafeArea(hasTopNotch ? [.top] : []).accentColor(Color(#colorLiteral(red: 0.07058823529, green: 0.4666666667, blue: 0.9215686275, alpha: 1)))
     }
 }
 
