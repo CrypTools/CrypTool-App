@@ -41,6 +41,24 @@
 		6885B0AE242A3F550075C219 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6885B0AD242A3F540075C219 /* BottomSheet.swift */; };
 		6885B0B1242A41B50075C219 /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = 6885B0B0242A41B50075C219 /* Down */; };
 		6885B0B3242A41F50075C219 /* Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6885B0B2242A41F50075C219 /* Down.swift */; };
+		68C9AAB7246330A30066563F /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9AAB6246330A30066563F /* Messages.framework */; };
+		68C9AABA246330A30066563F /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C9AAB9246330A30066563F /* MessagesViewController.swift */; };
+		68C9AABD246330A30066563F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C9AABB246330A30066563F /* MainInterface.storyboard */; };
+		68C9AABF246330AA0066563F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C9AABE246330AA0066563F /* Assets.xcassets */; };
+		68C9AAC3246330AA0066563F /* CrypTool-iMessage.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 68C9AAB4246330A30066563F /* CrypTool-iMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68C9AAC9246330CD0066563F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C9AAC8246330CD0066563F /* Parser.swift */; };
+		68C9AACA246331380066563F /* caesar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6814226F242A681B005C1F5C /* caesar.swift */; };
+		68C9AACB246331380066563F /* sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142270242A681B005C1F5C /* sha256.swift */; };
+		68C9AACC246331380066563F /* BitShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142271242A681B005C1F5C /* BitShift.swift */; };
+		68C9AACD246331380066563F /* md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142272242A681B005C1F5C /* md5.swift */; };
+		68C9AACE246331380066563F /* b64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142273242A681B005C1F5C /* b64.swift */; };
+		68C9AACF246331380066563F /* HashShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142274242A681B005C1F5C /* HashShift.swift */; };
+		68C9AAD0246331380066563F /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142275242A681B005C1F5C /* Emoji.swift */; };
+		68C9AAD1246331380066563F /* binascii.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142276242A681B005C1F5C /* binascii.swift */; };
+		68C9AAD2246331380066563F /* XOR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142277242A681B005C1F5C /* XOR.swift */; };
+		68C9AAD3246331380066563F /* ROT13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142278242A681B005C1F5C /* ROT13.swift */; };
+		68C9AAD4246331380066563F /* Rail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142279242A681B005C1F5C /* Rail.swift */; };
+		68C9AAD52463313F0066563F /* Ciphers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68142288242A74BD005C1F5C /* Ciphers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +76,28 @@
 			remoteGlobalIDString = 683C6BAA242973FD007A73DE;
 			remoteInfo = CrypTool;
 		};
+		68C9AAC1246330AA0066563F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 683C6BA3242973FD007A73DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68C9AAB3246330A30066563F;
+			remoteInfo = "CrypTool-iMessage";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68C9AAC4246330AA0066563F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				68C9AAC3246330AA0066563F /* CrypTool-iMessage.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		68048FF3243122E200278A2C /* CrypTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrypTool.entitlements; sourceTree = "<group>"; };
@@ -98,6 +137,13 @@
 		6885B0AA242A3ED60075C219 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		6885B0AD242A3F540075C219 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 		6885B0B2242A41F50075C219 /* Down.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Down.swift; sourceTree = "<group>"; };
+		68C9AAB4246330A30066563F /* CrypTool-iMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CrypTool-iMessage.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C9AAB6246330A30066563F /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		68C9AAB9246330A30066563F /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		68C9AABC246330A30066563F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		68C9AABE246330AA0066563F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68C9AAC0246330AA0066563F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C9AAC8246330CD0066563F /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +169,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68C9AAB1246330A30066563F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AAB7246330A30066563F /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +215,8 @@
 				683C6BAD242973FD007A73DE /* CrypTool */,
 				683C6BC424297403007A73DE /* CrypToolTests */,
 				683C6BCF24297403007A73DE /* CrypToolUITests */,
+				68C9AAB8246330A30066563F /* CrypTool-iMessage */,
+				68C9AAB5246330A30066563F /* Frameworks */,
 				683C6BAC242973FD007A73DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -171,6 +227,7 @@
 				683C6BAB242973FD007A73DE /* CrypTool.app */,
 				683C6BC124297403007A73DE /* CrypToolTests.xctest */,
 				683C6BCC24297403007A73DE /* CrypToolUITests.xctest */,
+				68C9AAB4246330A30066563F /* CrypTool-iMessage.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +317,26 @@
 			path = "Special Views";
 			sourceTree = "<group>";
 		};
+		68C9AAB5246330A30066563F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68C9AAB6246330A30066563F /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68C9AAB8246330A30066563F /* CrypTool-iMessage */ = {
+			isa = PBXGroup;
+			children = (
+				68C9AAB9246330A30066563F /* MessagesViewController.swift */,
+				68C9AABB246330A30066563F /* MainInterface.storyboard */,
+				68C9AABE246330AA0066563F /* Assets.xcassets */,
+				68C9AAC0246330AA0066563F /* Info.plist */,
+				68C9AAC8246330CD0066563F /* Parser.swift */,
+			);
+			path = "CrypTool-iMessage";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,10 +347,12 @@
 				683C6BA7242973FD007A73DE /* Sources */,
 				683C6BA8242973FD007A73DE /* Frameworks */,
 				683C6BA9242973FD007A73DE /* Resources */,
+				68C9AAC4246330AA0066563F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				68C9AAC2246330AA0066563F /* PBXTargetDependency */,
 			);
 			name = CrypTool;
 			packageProductDependencies = (
@@ -322,6 +401,23 @@
 			productReference = 683C6BCC24297403007A73DE /* CrypToolUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		68C9AAB3246330A30066563F /* CrypTool-iMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68C9AAC7246330AA0066563F /* Build configuration list for PBXNativeTarget "CrypTool-iMessage" */;
+			buildPhases = (
+				68C9AAB0246330A30066563F /* Sources */,
+				68C9AAB1246330A30066563F /* Frameworks */,
+				68C9AAB2246330A30066563F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CrypTool-iMessage";
+			productName = "CrypTool-iMessage";
+			productReference = 68C9AAB4246330A30066563F /* CrypTool-iMessage.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -342,6 +438,9 @@
 					683C6BCB24297403007A73DE = {
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = 683C6BAA242973FD007A73DE;
+					};
+					68C9AAB3246330A30066563F = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
@@ -367,6 +466,7 @@
 				683C6BAA242973FD007A73DE /* CrypTool */,
 				683C6BC024297403007A73DE /* CrypToolTests */,
 				683C6BCB24297403007A73DE /* CrypToolUITests */,
+				68C9AAB3246330A30066563F /* CrypTool-iMessage */,
 			);
 		};
 /* End PBXProject section */
@@ -394,6 +494,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68C9AAB2246330A30066563F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AABF246330AA0066563F /* Assets.xcassets in Resources */,
+				68C9AABD246330A30066563F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +556,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		68C9AAB0246330A30066563F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AACD246331380066563F /* md5.swift in Sources */,
+				68C9AACE246331380066563F /* b64.swift in Sources */,
+				68C9AACB246331380066563F /* sha256.swift in Sources */,
+				68C9AAD2246331380066563F /* XOR.swift in Sources */,
+				68C9AAD0246331380066563F /* Emoji.swift in Sources */,
+				68C9AAC9246330CD0066563F /* Parser.swift in Sources */,
+				68C9AAD1246331380066563F /* binascii.swift in Sources */,
+				68C9AACF246331380066563F /* HashShift.swift in Sources */,
+				68C9AACC246331380066563F /* BitShift.swift in Sources */,
+				68C9AACA246331380066563F /* caesar.swift in Sources */,
+				68C9AAD52463313F0066563F /* Ciphers.swift in Sources */,
+				68C9AAD4246331380066563F /* Rail.swift in Sources */,
+				68C9AABA246330A30066563F /* MessagesViewController.swift in Sources */,
+				68C9AAD3246331380066563F /* ROT13.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -460,6 +590,11 @@
 			target = 683C6BAA242973FD007A73DE /* CrypTool */;
 			targetProxy = 683C6BCD24297403007A73DE /* PBXContainerItemProxy */;
 		};
+		68C9AAC2246330AA0066563F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68C9AAB3246330A30066563F /* CrypTool-iMessage */;
+			targetProxy = 68C9AAC1246330AA0066563F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -469,6 +604,14 @@
 				683C6BBA24297402007A73DE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		68C9AABB246330A30066563F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68C9AABC246330A30066563F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -591,6 +734,7 @@
 		683C6BD624297403007A73DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CrypTool/CrypTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,7 +746,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypTool;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -613,6 +758,7 @@
 		683C6BD724297403007A73DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CrypTool/CrypTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,7 +770,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypTool;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArthurG.CrypTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -716,6 +863,46 @@
 			};
 			name = Release;
 		};
+		68C9AAC5246330AA0066563F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				INFOPLIST_FILE = "CrypTool-iMessage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArthurG.CrypTools.CrypTool-iMessage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68C9AAC6246330AA0066563F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73CCF549YB;
+				INFOPLIST_FILE = "CrypTool-iMessage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArthurG.CrypTools.CrypTool-iMessage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -751,6 +938,15 @@
 			buildConfigurations = (
 				683C6BDC24297403007A73DE /* Debug */,
 				683C6BDD24297403007A73DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68C9AAC7246330AA0066563F /* Build configuration list for PBXNativeTarget "CrypTool-iMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C9AAC5246330AA0066563F /* Debug */,
+				68C9AAC6246330AA0066563F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
