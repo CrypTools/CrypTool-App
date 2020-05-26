@@ -79,7 +79,7 @@ struct LearnView: View {
         AF.request(location).responseJSON {
             response in
             if (response.error != nil) {
-                print(response.error?.localizedDescription)
+                print(response.error?.localizedDescription ?? "Error")
                 return
             }
             do {

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import MessageUI
 
 struct EncryptView: View {
     @State private var isOpen = false
@@ -17,6 +18,17 @@ struct EncryptView: View {
     @State private var key = ""
     
     @State private var encrypted = ""
+    
+    @State var result: Result<MessageComposeResult, Error>? = nil
+    @State var isShowingMessageView = false
+    
+    var shareableString: String {
+        """
+        ---------- \(self.ciphers.name[self.selection]) ----------
+        \(self.ciphers.get(self.ciphers.name[self.selection])(self.message, self.key))
+        ---------- \(key) ----------
+        """
+    }
     var body: some View {
         ZStack(alignment: .top) {
             ScrollView {
@@ -68,12 +80,31 @@ struct EncryptView: View {
                                 .frame(width: geometry.size.width - 40)
                             .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.black))
                             
-                            Button(action: {
-                                UIPasteboard.general.string = self.ciphers.get(self.ciphers.name[self.selection])(self.message, self.key)
-                            }) {
-                                Text("Copy")
-                            }
-                            .padding()
+                            HStack {
+                                Button(action: {
+                                    UIPasteboard.general.string = self.ciphers.get(self.ciphers.name[self.selection])(self.message, self.key)
+                                }) {
+                                    VStack {
+                                        Image(systemName: "doc.on.doc")
+                                        Text("Copy")
+                                    }
+                                }
+                                .padding()
+                                
+                                Button(action: {
+                                    self.isShowingMessageView.toggle()
+                                }) {
+                                    VStack {
+                                        Image(systemName: "message")
+                                        Text("Message")
+                                    }
+                                }
+                                .padding()
+                                .disabled(!MFMessageComposeViewController.canSendText())
+                                .sheet(isPresented: self.$isShowingMessageView) {
+                                    MessageView(result: self.$result, content: self.shareableString)
+                                }
+                            }.padding()
                         }
                     }
                 }

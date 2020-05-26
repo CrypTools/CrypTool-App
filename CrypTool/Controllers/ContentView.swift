@@ -27,10 +27,8 @@ struct ContentView: View {
         if #available(iOS 13.0,  *) {
             return UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.safeAreaInsets.top ?? 0 > 20
         }else{
-         return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20
+            return UIApplication.shared.delegate?.window??.safeAreaInsets.top ?? 0 > 20
         }
-
-        return false
     }
     
     var isMac: Bool {
@@ -76,7 +74,9 @@ struct ContentView: View {
                     .font(.system(size: 18, weight: .bold, design: .monospaced))
                 }
             }.tag(1)
-        }.edgesIgnoringSafeArea(hasTopNotch ? [.top] : []).accentColor(Color(#colorLiteral(red: 0.07058823529, green: 0.4666666667, blue: 0.9215686275, alpha: 1)))
+        }
+//        .edgesIgnoringSafeArea(hasTopNotch ? [.top] : [])
+        .accentColor(Color(#colorLiteral(red: 0.07058823529, green: 0.4666666667, blue: 0.9215686275, alpha: 1)))
     }
 }
 
